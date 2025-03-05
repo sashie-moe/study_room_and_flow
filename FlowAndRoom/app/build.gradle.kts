@@ -65,22 +65,25 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    dependencies {
-        implementation(project.dependencies.platform("io.insert-koin:koin-bom:4.0.2"))
-        implementation(libs.koin.core)
-        implementation(libs.koin.android)
-        implementation(libs.koin.android.compat)
-        implementation(libs.koin.core.coroutines)
-        implementation(libs.koin.androidx.workmanager)
-        implementation(libs.koin.core.viewmodel)
+    implementation(project.dependencies.platform("io.insert-koin:koin-bom:4.0.2"))
+    implementation(libs.koin.core)
+    implementation(libs.koin.android)
+    implementation(libs.koin.android.compat)
+    implementation(libs.koin.core.coroutines)
+    implementation(libs.koin.androidx.workmanager)
+    implementation(libs.koin.core.viewmodel)
 
-        implementation(libs.androidx.room.runtime)
-        implementation(libs.androidx.room.ktx)
-        ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    ksp(libs.androidx.room.compiler)
 
-        implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.core)
 
-        implementation(libs.androidx.lifecycle.viewmodel.ktx)
-        implementation(libs.androidx.lifecycle.livedata.ktx)
-    }
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+
+    implementation(libs.androidx.runtime)
+    implementation(libs.androidx.runtime.livedata)
+    implementation(libs.androidx.runtime.rxjava2)
+
 }
